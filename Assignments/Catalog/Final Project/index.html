@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architect-Designed Chairs | Final Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="title">Architect-Designed Chairs</h1>
+    <div class="content">
+        <div class="button-group">
+            <div class="category">Materials</div>
+            <div class="subcategories">
+                <button onclick="filterImages('Cardboard')">Cardboard</button>
+                <button onclick="filterImages('Wood')">Wood</button>
+                <button onclick="filterImages('Leather')">Leather</button>
+                <button onclick="filterImages('Fabric')">Fabric</button>
+                <button onclick="filterImages('Plastic')">Plastic</button>
+                <button onclick="filterImages('Metal')">Metal</button>
+                <button onclick="filterImages('Wool')">Wool</button>
+            </div>
+            <div class="category">Regions</div>
+            <div class="subcategories">
+                <button onclick="filterImages('CentralEurope')">CentralEurope</button>
+                <button onclick="filterImages('SouthEurope')">SouthEurope</button>
+                <button onclick="filterImages('SouthEastEurope')">SouthEastEurope</button>
+                <button onclick="filterImages('WestEurope')">WestEurope</button>
+                <button onclick="filterImages('Scandinavia')">Scandinavia</button>
+                <button onclick="filterImages('IberianPeninsula')">IberianPeninsula</button>
+                <button onclick="filterImages('NorthAmerica')">NorthAmerica</button>
+                <button onclick="filterImages('EastAsia')">EastAsia</button>
+                <button onclick="filterImages('SouthAsia')">SouthAsia</button>
+                <button onclick="filterImages('SoutheastAsia')">SouthAsia</button>
+                <button onclick="filterImages('Oceania')">Oceania</button>
+            </div>
+            <div class="category">Time of Creation</div>
+            <div class="subcategories">
+                <button onclick="filterImages('1770s')">1770s</button>
+                <button onclick="filterImages('1900s')">1900s</button>
+                <button onclick="filterImages('1910s')">1910s</button>
+                <button onclick="filterImages('1920s')">1920s</button>
+                <button onclick="filterImages('1930s')">1930s</button>
+                <button onclick="filterImages('1940s')">1940s</button>
+                <button onclick="filterImages('1950s')">1950s</button>
+                <button onclick="filterImages('1960s')">1960s</button>
+                <button onclick="filterImages('1980s')">1980s</button>
+                <button onclick="filterImages('2000s')">2000s</button>
+                <button onclick="filterImages('2010s')">2010s</button>
+                <button onclick="filterImages('2020s')">2020s</button>
+            </div>
+            <button onclick="filterImages('all')">Show All</button>
+        </div>
+
+        <div class="image-grid">
+            <img src="img/1.jpg" alt="Leather Metal CentralEurope 1920s" class="subcategories Leather Metal CentralEurope 1920s">
+            <img src="img/2.jpg" alt="Wood Metal Leather IberianPeninsula 2020s" class="subcategories Wood Metal Leather IberianPeninsula 2020s">
+            <img src="img/3.jpg" alt="Metal Wool SouthEurope 2010s" class="subcategories Metal Wool SouthEurope 2010s">
+            <img src="img/4.jpg" alt="Metal Wool SouthEurope 2010s" class="subcategories Metal Wool SouthEurope 2010s">
+            <img src="img/5.jpg" alt="Metal NorthAmerica 2010s" class="subcategories Metal NorthAmerica 2010s">
+            <img src="img/6.jpg" alt="Metal NorthAmerica 2010s" class="subcategories Metal NorthAmerica 2010s">
+            <img src="img/7.jpg" alt="Wood Fabric SouthEurope 2020s" class="subcategories Wood Fabric SouthEurope 2020s">
+            <img src="img/8.jpg" alt="Wood Fabric SouthEurope 2020s" class="subcategories Wood Fabric SouthEurope 2020s">
+            <img src="img/9.jpg" alt="Metal Wood Fabric IberianPeninsula 2020s" class="subcategories Wood Metal Fabric IberianPeninsula 2020s">
+            <img src="img/10.jpg" alt="Leather Metal NorthAmerica 1950s" class="subcategories Leather Metal NorthAmerica 1950s">
+            <img src="img/11.jpg" alt="Leather Metal NorthAmerica 1950s" class="subcategories Leather Metal NorthAmerica 1950s">
+            <img src="img/12.jpg" alt="Wood EastAsia 2010s" class="subcategories Wood EastAsia 2010s">
+            <img src="img/13.jpg" alt="Wood EastAsia 2010s" class="subcategories Wood EastAsia 2010s">
+            <img src="img/14.jpg" alt="Metal Plastic SouthEurope 2010s" class="subcategories Metal Plastic SouthEurope 2010s">   
+            <img src="img/15.jpg" alt="Metal Plastic SouthEurope 2010s" class="subcategories Metal Plastic SouthEurope 2010s">
+            <img src="img/16.jpg" alt="Fabric SouthEurope 1960s" class="subcategories Fabric SouthEurope 1960s">
+            <img src="img/17.jpg" alt="Fabric SouthEurope 1960s" class="subcategories Fabric SouthEurope 1960s">     
+            <img src="img/18.jpg" alt="Plastic IberianPeninsula 2000s" class="subcategories Plastic IberianPeninsula 2000s">      
+            <img src="img/19.jpg" alt="Plastic IberianPeninsula 2000s" class="subcategories Plastic IberianPeninsula 2000s">     
+            <img src="img/20.jpg" alt="Metal Fabric Wood IberianPeninsula 2020s" class="subcategories Metal Fabric Wood IberianPeninsula 2020s">    
+            <img src="img/21.jpg" alt="Metal Fabric Wood IberianPeninsula 2020s" class="subcategories Metal Fabric Wood IberianPeninsula 2020s">     
+            <img src="img/22.jpg" alt="Metal Plastic SouthAsia 1960s" class="subcategories Metal Plastic SouthAsia 1960s">     
+            <img src="img/23.jpg" alt="Metal Plastic SouthAsia 1960s" class="subcategories Metal Plastic SouthAsia 1960s">          
+            <img src="img/24.jpg" alt="Wood SouthEurope 2010s" class="subcategories Wood SouthEurope 2010s">          
+            <img src="img/25.jpg" alt="Wood SouthEurope 2010s" class="subcategories Wood SouthEurope 2010s">       
+            <img src="img/26.jpg" alt="Metal Leather SouthAsia 2010s" class="subcategories Metal Leather SouthAsia 2010s">        
+            <img src="img/27.jpg" alt="Metal Leather SouthAsia 2010s" class="subcategories Metal Leather SouthAsia 2010s"> 
+            <img src="img/28.jpg" alt="Wood WestEurope 1910s" class="subcategories Wood WestEurope 1910s">   
+            <img src="img/29.jpg" alt="Metal Leather WestEurope 1920s" class="subcategories Metal Leather WestEurope 1920s">
+            <img src="img/30.jpg" alt="Metal Wood Scandinavia 1960s" class="subcategories Metal Wood Scandinavia 1960s">
+            <img src="img/31.jpg" alt="Wood Leather WestEurope 1930s" class="subcategories Wood Leather WestEurope 1930s">
+            <img src="img/32.jpg" alt="Metal Wood Leather SouthEurope 1930s" class="subcategories Metal Wood Leather SouthEurope 1930s">
+            <img src="img/33.jpg" alt="Metal Wood Leather Plastic CentralEurope 1940s" class="subcategories Metal Wood Leather Plastic CentralEurope 1940s">
+            <img src="img/34.jpg" alt="Metal Leather SouthEurope IberianPeninsula 1940s" class="subcategories Metal Leather SouthEurope IberianPeninsula 1940s">
+            <img src="img/35.jpg" alt="Metal Fabric NorthAmerica 1950s" class="subcategories Metal Fabric  NorthAmerica 1950s">
+            <img src="img/36.jpg" alt="Cardboard NorthAmerica 1970s" class="subcategories Cardboard NorthAmerica 1970s">
+            <img src="img/37.jpg" alt="Metal IberianPeninsula 1970s" class="subcategories Metal IberianPeninsula 1970s">
+            <img src="img/38.jpg" alt="Metal NorthAmerica 1960s" class="subcategories Metal NorthAmerica 1960s">
+            <img src="img/39.jpg" alt="Metal SouthEastEurope 2010s" class="subcategories Metal SouthEastEurope 2010s">
+            <img src="img/40.jpg" alt="Metal NorthAmerica 2010s" class="subcategories Metal NorthAmerica 2010s">
+            <img src="img/41.jpg" alt="Metal Wood Scandinavia 1960s" class="subcategories Metal Wood Scandinavia 1960s">
+            <img src="img/42.jpg" alt="Wood Leather NorthAmerica 1920s" class="subcategories Wood Leather NorthAmerica 1920s">
+            <img src="img/43.jpg" alt="Metal Leather SouthEastEurope 1900s" class="subcategories Metal Leather SouthEastEurope 1900s">
+            <img src="img/44.jpg" alt="Metal Fabric NorthAmerica 1950s" class="subcategories Metal Fabric NorthAmerica 1950s">
+            <img src="img/45.jpg" alt="Metal Leather CentralEurope 1920s" class="subcategories Metal Leather CentralEurope 1920s">
+            <img src="img/46.jpg" alt="Metal Leather CentralEurope 1920s" class="subcategories Metal Leather CentralEurope 1920s">
+            <img src="img/47.jpg" alt="Metal Leather IberianPeninsula 1950s" class="subcategories Metal Leather IberianPeninsula 1950s">            
+            <img src="img/48.jpg" alt="Metal CentralEurope 1920s" class="subcategories Metal CentralEurope 1920s">
+            <img src="img/49.jpg" alt="Metal Plastic NorthAmerica 1930s" class="Metal Plastic NorthAmerica 1930s">
+            <img src="img/50.jpg" alt="Cardboard NorthAmerica 1970s" class="subcategories Cardboard NorthAmerica 1970s">
+            <img src="img/51.jpg" alt="Wood Leather SouthEurope 1970s" class="subcategories Wood Leather SouthEurope 1970s">
+            <img src="img/52.jpg" alt="Plastic NorthAmerica 1940s" class="subcategories Plastic NorthAmerica 1940s">
+            <img src="img/53.jpg" alt="Wood SouthEurope 1920s" class="subcategories Wood SouthEurope 1920s">
+            <img src="img/54.jpg" alt="Metal SouthEurope 1920s" class="subcategories Metal SouthEurope 1920s">
+            <img src="img/55.jpg" alt="Metal Wood EastAsia 1980s" class="subcategories Metal Wood  EastAsia 1980s">
+            <img src="img/56.jpg" alt="Wood EastAsia 2010s" class="subcategories Wood EastAsia 2010s">
+            <img src="img/57.jpg" alt="Wood Leather NorthAmerica 2020s" class="subcategories Wood Leather NorthAmerica 2020s">
+            <img src="img/58.jpg" alt="Wood EastAsia 1990s" class="subcategories Wood EastAsia 1990s">
+            <img src="img/59.jpg" alt="Metal Plastic EastAsia 2000s" class="subcategories Metal Plastic EastAsia 2000s">
+            <img src="img/60.jpg" alt="Wood WestEurope 2000s" class="subcategories Wood WestEurope 2000s">
+            <img src="img/61.jpg" alt="Metal Leather CentralEurope 1920s" class="subcategories Metal Leather CentralEurope 1920s">
+            <img src="img/62.jpg" alt="Metal Leather CentralEurope 1920s" class="subcategories Metal Leather CentralEurope 1920s">
+            <img src="img/63.jpg" alt="Metal Leather CentralEurope 1920s" class="subcategories Metal Leather CentralEurope 1920s">
+            <img src="img/64.jpg" alt="Metal Leather CentralEurope 1920s" class="subcategories Metal Leather CentralEurope 1920s">
+            <img src="img/65.jpg" alt="Plastic Scandinavia 1950s" class="subcategories Plastic Scandinavia 1950s">
+            <img src="img/66.jpg" alt="Metal Wood Leather NorthAmerica 1950s" class="subcategories Metal Wood Leather NorthAmerica 1950s">
+            <img src="img/67.jpg" alt="Metal Wood Leather NorthAmerica 1950s" class="subcategories Metal Wood Leather NorthAmerica 1950s">
+            <img src="img/68.jpg" alt="Metal Wood Leather NorthAmerica 1950s" class="subcategories Metal Wood Leather NorthAmerica 1950s">
+            <img src="img/69.jpg" alt="Metal Wood Leather NorthAmerica 1950s" class="subcategories Metal Wood Leather NorthAmerica 1950s">
+            <img src="img/70.jpg" alt="Metal Wood Leather NorthAmerica 1950s" class="subcategories Metal Wood Leather NorthAmerica 1950s">
+            <img src="img/71.jpg" alt="Metal Leather Scandinavia 1950s" class="subcategories Metal Leather Scandinavia 1950s">
+            <img src="img/72.jpg" alt="Metal Leather Scandinavia 1950s" class="subcategories Metal Leather Scandinavia 1950s">
+            <img src="img/73.jpg" alt="Metal Leather Scandinavia 1950s" class="subcategories Metal Leather Scandinavia 1950s">
+            <img src="img/74.jpg" alt="Plastic EastAsia 2000s" class="subcategories Plastic EastAsia 2000s">
+            <img src="img/75.jpg" alt="Fabric Metal Scandinavia 2010s" class="subcategories Fabric Metal Scandinavia 2010s">
+            <img src="img/76.jpg" alt="Leather Metal CentralEurope 1920s" class="subcategories Leather Metal CentralEurope 1920s">
+            <img src="img/77.jpg" alt="Fabric Metal CentralEurope 1920s" class="subcategories Fabric Metal CentralEurope 1920s">
+            <img src="img/78.jpg" alt="Fabric Metal CentralEurope 1920s" class="subcategories Fabric Metal CentralEurope 1920s">
+            <img src="img/79.jpg" alt="Leather Metal IberianPeninsula 1940s" class="subcategories Leather Metal IberianPeninsula 1940s">
+            <img src="img/80.jpg" alt="Plastic SouthEurope 2000s" class="subcategories Plastic SouthEurope 2000s">
+            <img src="img/81.jpg" alt="Plastic SouthEurope 2000s" class="subcategories Plastic SouthEurope 2000s">
+            <img src="img/82.jpg" alt="Wood Oceania 1940s" class="subcategories Wood Oceania 1940s">
+            <img src="img/83.jpg" alt="Plastic Scandinavia 1950s" class="subcategories Plastic Scandinavia 1950s">
+            <img src="img/84.jpg" alt="Wood Fabric Scandinavia 1950s" class="subcategories Wood Fabric Scandinavia 1950s">
+            <img src="img/85.jpg" alt="Fabric Metal WestEurope 1960s" class="subcategories Fabric Metal WestEurope 1960s">
+            <img src="img/86.jpg" alt="Wood WestEurope 1910s" class="subcategories Wood WestEurope 1910s">
+            <img src="img/87.jpg" alt="Wood Fabric SouthEastEurope 1900s" class="subcategories Wood Fabric SouthEastEurope 1900s">
+            <img src="img/88.jpg" alt="Wood Fabric SouthEastEurope 1900s" class="subcategories Wood Fabric SouthEastEurope 1900s">
+            <img src="img/89.jpg" alt="Metal Leather NorthAmerica 1770s" class="subcategories Metal Leather NorthAmerica 1770s">
+            <img src="img/90.jpg" alt="Metal Plastic Fabric NorthAmerica 1950s" class="subcategories Metal Plastic Fabric NorthAmerica 1950s">
+            <img src="img/91.jpg" alt="Metal Plastic Fabric NorthAmerica 1950s" class="subcategories Metal Plastic Fabric NorthAmerica 1950s">
+            <img src="img/92.jpg" alt="Metal Leather CentralEurope 1920s" class="subcategories Metal Leather CentralEurope 1920s">
+            <img src="img/93.jpg" alt="Cardboard NorthAmerica 1970s" class="subcategories Cardboard NorthAmerica 1970s">
+            <img src="img/94.jpg" alt="Metal SouthEastEurope 2010s" class="subcategories Metal SouthEastEurope 2010s">
+            <img src="img/95.jpg" alt="Wood IberianPeninsula 1970s" class="subcategories Wood IberianPeninsula 1970s">
+            <img src="img/96.jpg" alt="Metal SouthEastEurope 2010s" class="subcategories Metal SouthEastEurope 2010s">
+            <img src="img/97.jpg" alt="Wood Metal Leather NorthAmerica 1950s" class="subcategories Wood Metal Leather NorthAmerica 1950s">
+            <img src="img/98.jpg" alt="Wood SoutheastAsia 1940s" class="subcategories Wood SoutheastAsia 1940s">
+            <img src="img/99.jpg" alt="Wood Leather SouthEurope 1970s" class="subcategories Wood Leather SouthEurope 1970s">
+            <img src="img/100.jpg" alt="Metal NorthAmerica 2010s" class="subcategories Metal NorthAmerica 2010s">
+        </div>
+    </div>
+
+    <script>
+        function filterImages(category) {
+            const images = document.querySelectorAll('.image-grid img');
+
+            images.forEach(img => {
+                if (category === 'all') {
+                    img.classList.remove('hidden');
+                } else {
+                    if (img.classList.contains(category)) {
+                        img.classList.remove('hidden');
+                    } else {
+                        img.classList.add('hidden');
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+
+
+
